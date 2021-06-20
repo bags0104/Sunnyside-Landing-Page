@@ -1,0 +1,242 @@
+/* @font-face {
+    font-family: "Barlow";
+    src: url("https://fonts.google.com/specimen/Barlow");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("https://fonts.google.com/specimen/Fraunces"); */
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@media (min-width:375){
+    .container{
+        max-width:375;
+    }
+}
+@media (min-width: 1530px) {
+    .container {
+      max-width: 1530px;
+    }
+}
+
+.flex{
+    display:flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.items-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-1{
+    flex:1;
+}
+.container {
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:0rem;
+    margin:0 auto;
+}
+
+header.bg{
+    background-image: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height:700px;
+    width: 100%;
+}
+header.bg .navbar > div img {
+    padding: 1.5rem;
+}
+header.bg .navbar .info{
+    padding: 1.5rem;
+}
+header.bg .navbar .info a{
+    text-decoration: none;
+    font-family: serif;
+    font-size: 1.5rem;
+    color: white;    
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 1.5rem;
+}
+header.bg .navbar .info a:hover{
+    background-color: rgb(166, 218, 235);
+    border-radius: 23px;
+}
+header.bg .tag {
+    padding-bottom: 50%;
+}
+header.bg .tag h1{
+    font-size: 4rem;
+    padding: 3rem;
+    font-family: 'Fraunces', serif;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.75rem;
+}
+header.bg .tag h3{
+    text-align: center;
+    color: white;
+    font-size: 10rem;
+    font-family: 'Barlow', sans-serif;
+}
+section.egg .first {
+    flex: 1;
+}
+section.egg .second {
+    flex: 1;
+}
+section.egg .tranform_your_brand {
+    text-align: left;
+    padding: 10rem;
+}
+section.egg .tranform_your_brand h1{
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+    font-weight: 900;
+}
+.egg-image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+section.egg .tranform_your_brand p{
+    font-family: 'Barlow', sans-serif;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: gray;
+} 
+.btn{
+    padding: 0.3rem;
+    border-radius: 10px;
+    line-height: 0.8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+    border: 0px;
+    font-weight: bold;
+    font-family: serif;
+    letter-spacing: 0.06rem;
+}
+.btn-yellow:hover{
+    background-image: linear-gradient(white 60%, rgb(253, 197, 13) 60% 100%);
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+}
+.btn-pink:hover {
+    background-image: linear-gradient(white 60%, salmon 60% 100%);
+    border-radius: 10px;
+    border: 0px;
+    font-weight: bold;
+}
+.img-text {
+    padding: 5rem;
+    padding-bottom: 0rem;
+    text-align: center;
+    transform: translate(0px, -300px);
+}
+.img-text h1 {
+    padding: 0.5rem;
+    font-family: serif;
+    font-size: 3rem;
+    letter-spacing: 0.07rem;
+}
+.img-text p {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    color: balck;
+    line-height: 1.8rem;
+    letter-spacing: 0.05rem;
+}
+section.clients h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: serif;
+    letter-spacing: 0.4rem;
+    color: rgb(71, 70, 70);
+    transform: translateY(-100px);
+}
+section.clients .slides .slide {
+    padding: 3rem;
+    text-align: center;
+}
+section.clients .slides .slide .slide-image img{
+    border-radius: 100px;
+    padding: 2rem;
+}
+section.clients .slides .slide .review {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: rgb(80, 80, 80);
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+section.clients .slides .slide .name {
+    line-height: 2rem;
+    font-family: serif;
+}
+section.clients .slides .slide .name h2 {
+    font-size: 1.2rem;
+}
+section.clients .slides .slide .name h3 {
+    font-size: 1rem;
+    color: gray;
+    padding-bottom: 2rem;
+}
+section.imgs .row .col {
+    justify-content: space-around;
+}
+footer {
+    background-color: rgb(100, 202, 202);
+}
+footer .logo-img {
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem 1rem 0rem;
+}
+footer .information {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+footer .icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+footer .icons img{
+    padding: 1rem;
+}
+footer .information a {
+    text-decoration: none;
+    padding: 2rem;
+    color: rgb(30, 112, 112);
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+footer .information a:hover {
+    color: white;
+}
+footer .icons img:hover{
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
