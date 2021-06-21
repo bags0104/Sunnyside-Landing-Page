@@ -236,7 +236,23 @@ footer .information a {
 footer .information a:hover {
     color: white;
 }
+footer .icons{
+    padding-bottom: 2rem;
+}
 footer .icons img:hover{
     filter: brightness(0) invert(1);
     cursor: pointer;
+}
+.attribution {
+    background-color: rgb(40, 128, 128);
+    padding: 1rem;
+    letter-spacing: 0.05rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.attribution a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: rgb(51, 50, 50);
 }
